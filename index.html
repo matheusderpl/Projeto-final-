@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Matheus Henrique Pedro Feliciano</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0d6efd;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      text-align: center;
+      background: linear-gradient(135deg, #0d6efd, #3b82f6);
+      color: white;
+      padding: 100px 20px 60px;
+    }
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 10px 0;
+      font-size: 32px;
+    }
+    header p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: white;
+      color: #0d6efd;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #f4f6f9;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h2 {
+      color: #0d6efd;
+      margin-bottom: 20px;
+    }
+
+    /* ===== HABILIDADES EM CARDS ===== */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .skill-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* ===== IMAGEM DE TECNOLOGIA ===== */
+    .tech-img {
+      display: block;
+      margin: 30px auto;
+      width: 70%;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      background: #0d6efd;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#perfil">Perfil</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <img src="homem-serio-com-a-barba-por-fazer-de-aparencia-agradavel-tem-cabelos-escuros-ericados-contempla-sobre-algo-importante-vestido-com-roupas-da-moda-isolado-sobre-parede-branca-homem-europeu-interior_273609-16093.jpg" alt="Foto de Perfil">
+    <h1>Matheus Henrique Pedro Feliciano</h1>
+    <p>Profissional de IT | Desenvolvedor | Analista de Sistemas</p>
+    <a href="#" class="btn">📄 Baixar Currículo (PDF)</a>
+  </header>
+
+  <!-- PERFIL -->
+  <section id="perfil">
+    <h2>Perfil</h2>
+    <p>
+      Sou um profissional da área de Tecnologia da Informação com interesse em desenvolvimento de software,
+      suporte técnico e análise de sistemas. Realizei cursos de <b>Informática</b>, <b>Microsoft Excel</b> e <b>Excel Avançado</b>
+      na <b>Top Master</b>. Busco constantemente aprimorar minhas habilidades e aplicar meus conhecimentos em soluções inovadoras.
+    </p>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div class="skill-card">💻 Informática (Top Master)</div>
+      <div class="skill-card">📊 Microsoft Excel (Top Master)</div>
+      <div class="skill-card">📈 Excel Avançado (Top Master)</div>
+      <div class="skill-card">🌐 HTML, CSS, JavaScript, Python</div>
+      <div class="skill-card">🗄️ Banco de Dados (MySQL, PostgreSQL)</div>
+      <div class="skill-card">🔐 Redes e Segurança</div>
+      <div class="skill-card">🐧 Linux & Windows Server</div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia">
+    <h2>Experiência</h2>
+    <p><b>Empresa X</b> – Desenvolvedor Web (2022 - Atual)<br>
+    Desenvolvimento de sistemas web responsivos, manutenção de banco de dados e integração com APIs.</p>
+
+    <p><b>Empresa Y</b> – Suporte Técnico (2020 - 2022)<br>
+    Atendimento a usuários, manutenção de redes e configuração de servidores.</p>
+
+    <img src="images.jpeg" alt="Imagem de Tecnologia" class="tech-img">
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>
+      📧 Email: <a href="mailto:matheushenriquepedrofeliciano@gmail.com">matheushenriquepedrofeliciano@gmail.com</a><br>
+      📱 Telefone: (43) 99616-2376<br>
+      📍 Endereço: Rua Tangará, Vila Triângulo, 535
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 - Matheus Henrique Pedro Feliciano</p>
+    <p>
+      🌐 <a href="#">LinkedIn</a> | 💻 <a href="#">GitHub</a> | ✉️ <a href="mailto:matheushenriquepedrofeliciano@gmail.com">Email</a>
+    </p>
+  </footer>
+
+</body>
+</html>
+
